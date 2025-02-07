@@ -1,8 +1,11 @@
 import requests
-from django.conf import settings
+import os
+from dotenv import load_dotenv
 
-SPOTIFY_CLIENT_ID = 'mover a env'
-SPOTIFY_CLIENT_SECRET = 'mover a env'
+load_dotenv()
+
+SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 
 def get_spotify_token():
     url = "https://accounts.spotify.com/api/token"
