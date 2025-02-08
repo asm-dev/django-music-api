@@ -38,23 +38,23 @@ SPOTIFY_CLIENT_SECRET=tu_client_secret
 
 La API expone los siguientes endpoints para gestionar usuarios, canciones y preferencias musicales
 
-| Ruta                      | Descripción                                                                                    |
-| :------------------------ | :--------------------------------------------------------------------------------------------- |
-| `GET /songs/`             | Obtiene la lista de todas las canciones disponibles en la base de datos.                       |
-| `POST /songs/`            | Crea una nueva canción en la base de datos.                                                    |
-| `GET /songs/<int:pk>/`    | Obtiene los detalles de una canción específica mediante su ID.                                 |
-| `PUT /songs/<int:pk>/`    | Actualiza los detalles de una canción existente.                                               |
-| `DELETE /songs/<int:pk>/` | Elimina una canción específica de la base de datos.                                            |
-| `GET /songs/export/`      | Exporta todas las canciones en formato JSON. Ejecutado desde el navegador descarga el fichero. |
-| `POST /songs/import/`     | Importa canciones desde un archivo JSON al la base de datos del servidor.                      |
-| `POST /songs/favorite/`   | Marca o desmarca una canción como favorita de un usuario.                                      |
-| `GET /songs/favorites/`   | Obtiene todas las canciones marcadas como favoritas por el usuario autenticado.                |
-| `GET /users/`             | Obtiene la lista de todos los usuarios registrados en el sistema.                              |
-| `POST /users/`            | Crea un nuevo usuario.                                                                         |
-| `GET /users/<int:pk>/`    | Obtiene los detalles de un usuario específico mediante su ID.                                  |
-| `PUT /users/<int:pk>/`    | Actualiza los detalles de un usuario existente.                                                |
-| `DELETE /users/<int:pk>/` | Elimina un usuario específico del sistema.                                                     |
-| `GET /spotify/search/`    | Realiza una búsqueda en la API de Spotify para encontrar canciones                             |
+| Ruta                      | Descripción                                                                     |
+| :------------------------ | :------------------------------------------------------------------------------ |
+| `GET /songs/`             | Obtiene la lista de todas las canciones disponibles en la BD.                   |
+| `POST /songs/`            | Crea una nueva canción en la base de datos.                                     |
+| `GET /songs/<int:pk>/`    | Obtiene los detalles de una canción específica mediante su ID.                  |
+| `PUT /songs/<int:pk>/`    | Actualiza los detalles de una canción existente.                                |
+| `DELETE /songs/<int:pk>/` | Elimina una canción específica de la base de datos.                             |
+| `GET /songs/export/`      | Exporta todas las canciones en formato JSON.                                    |
+| `POST /songs/import/`     | Importa canciones desde un archivo JSON al la base de datos del servidor.       |
+| `POST /songs/favorite/`   | Marca o desmarca una canción como favorita de un usuario.                       |
+| `GET /songs/favorites/`   | Obtiene todas las canciones marcadas como favoritas por el usuario autenticado. |
+| `GET /users/`             | Obtiene la lista de todos los usuarios registrados en el sistema.               |
+| `POST /users/`            | Crea un nuevo usuario.                                                          |
+| `GET /users/<int:pk>/`    | Obtiene los detalles de un usuario específico mediante su ID.                   |
+| `PUT /users/<int:pk>/`    | Actualiza los detalles de un usuario existente.                                 |
+| `DELETE /users/<int:pk>/` | Elimina un usuario específico del sistema.                                      |
+| `GET /spotify/search/`    | Realiza una búsqueda en la API de Spotify para encontrar canciones              |
 
 &nbsp;
 
