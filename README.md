@@ -85,4 +85,8 @@ _Exportación de datos en formato JSON_
 
 _Usuario desmarca una canción como favorita_
 
-Imagen
+![image](https://github.com/user-attachments/assets/681336c3-2476-40c0-a192-917486820eec)
+![image](https://github.com/user-attachments/assets/3a4c371b-0931-4efb-98c2-dc21ac8eefcd)
+![image](https://github.com/user-attachments/assets/f2601324-1244-4fad-bdb9-8fcce3d0c424)
+
+
