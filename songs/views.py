@@ -48,10 +48,8 @@ class SpotifySearchView(APIView):
         return Response(data)
     
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def export_songs(request):
-    if not request.user.is_authenticated:
-        return Response({"detail": "Error de autenticación."}, status=status.HTTP_401_UNAUTHORIZED)
-
     try:
         response = export_songs_to_json()
         return response
@@ -59,10 +57,8 @@ def export_songs(request):
         return HttpResponse(f"Error: {str(e)}", status=400)
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def import_songs(request):
-    if not request.user.is_authenticated:
-        return Response({"detail": "Error de autenticación."}, status=status.HTTP_401_UNAUTHORIZED)
-
     try:
         json_data = request.data
 
