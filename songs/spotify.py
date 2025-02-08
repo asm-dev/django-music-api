@@ -1,6 +1,7 @@
 import requests
 import os
 from dotenv import load_dotenv
+from urllib.parse import quote
 
 load_dotenv()
 
@@ -20,7 +21,25 @@ def get_spotify_token():
 
 def search_song(song_name):
     token = get_spotify_token()
-    url = f"https://api.spotify.com/v1/search?q={song_name}&type=track"
+    url = f"https://api.spotify.com/v1/search?q={quote(song_name)}&type=track"
     headers = {"Authorization": f"Bearer {token}"}
     response = requests.get(url, headers=headers)
-    return response.json()
+    
+    if response.status_code != 200:
+        return {"error": "No se pudo conectar a Spotify"}
+    
+    data = response.json()
+    tracks = data.get("tracks", {}).get("items", [])
+    
+    results = []
+    for track in tracks:
+        results.append({
+            "title": track["name"],
+            "artist": ", ".join(artist["name"] for artist in track["artists"]),
+            "album": track["album"]["name"],
+            "release_date": track["album"]["release_date"],
+            "preview_url": track.get("preview_url", "No disponible"),
+            "spotify_url": track["external_urls"]["spotify"],
+        })
+    
+    return results

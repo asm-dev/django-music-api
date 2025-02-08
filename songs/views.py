@@ -43,6 +43,7 @@ class SpotifySearchView(APIView):
         song_name = request.query_params.get("song")
         if not song_name:
             return Response({"error": "Necesitas añadir una canción"}, status=400)
+        
         data = search_song(song_name)
         return Response(data)
     
