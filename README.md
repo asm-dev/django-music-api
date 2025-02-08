@@ -1,31 +1,33 @@
 # Servidor Django de API musical
 
-Este proyecto es una API RESTful creada con Django que integra la API de Spotify. El servidor permite gestionar usuarios, canciones y sus preferencias musicales, posibilitando marcar canciones como favoritas.
+Este proyecto es una API RESTful creada con Django que integra la API de Spotify. 
+
+El servidor permite gestionar usuarios, canciones y sus preferencias musicales, posibilitando marcar canciones como favoritas.
 
 &nbsp;
 
 ## Instalación y config
 
-1. **Clona** el repositorio en tu máquina local
-2. Crea un **entorno virtual** (si no lo tienes ya). Recomiendo Anaconda, pero también puedes usar venv
+1. Clona el repositorio.
+4. Crea un entorno virtual (si no lo tienes ya). Recomiendo Anaconda:
 
 ```
 conda create --name django-spotify-api python=3.9
 conda activate django-spotify-api
 ```
 
-3. Instala las **dependencias** `pip install -r requirements.txt`
-4. Actualiza el **environment** desde el fichero `.env`. Agrega tus credenciales de Spotify de la siguiente forma:
+3. Instala las dependencias `pip install -r requirements.txt`
+4. Crea un fichero `.env` y agrega tus credenciales de Spotify:
 
 ```
-SPOTIFY_CLIENT_ID=tu_api_key
+SPOTIFY_CLIENT_ID=tu_client_id
 SPOTIFY_CLIENT_SECRET=tu_client_secret
 
 ```
 
-6. Aplica las **migraciones** de la base de datos `python manage.py migrate`
-7. Crea un **superusuario** para acceder al panel de administración de Django `python manage.py createsuperuser`
-8. **Inicia el servidor** de desarrollo `python manage.py runserver`
+6. Aplica las migraciones de la base de datos: `python manage.py migrate`
+7. Crea un superusuario para poder acceder al panel de administración de Django: `python manage.py createsuperuser`
+8. Inicia el servidor: `python manage.py runserver`
 9. Diviértete probando los endpoints usando la interfaz de Django, Postman, Bruno o Insomnia. Si no quieres salir del IDE también recomiendo la extensión RapidAPI.
 
 &nbsp;
