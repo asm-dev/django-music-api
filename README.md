@@ -66,17 +66,23 @@ _Obtenemos la lista de usuarios_
 
 _Eliminamos una canción_
 
-Imagen
+![image](https://github.com/user-attachments/assets/7e0e33c6-7086-413d-b0da-f3b00e05fe53)
+![image](https://github.com/user-attachments/assets/b4c6e779-c29c-49a2-ac3b-7b51661fcdab)
 
 _Buscamos una canción conectando con la API de Spotify_
 
 ![image](https://github.com/user-attachments/assets/f673e88f-a913-49f5-95c8-75244978ac7e)
 
+_Importación de datos en formato JSON_
 
-_Importación y exportación de datos para comunicación entre cliente y servidor_
+![image](https://github.com/user-attachments/assets/913a0362-57ca-45aa-9b92-f48e06812a63)
+![image](https://github.com/user-attachments/assets/e120bc15-6993-4c13-909b-f3d515f943be)
+![image](https://github.com/user-attachments/assets/2ae35a4e-fdee-4041-84cf-eadf4561ef2d)
 
-Imagen
+_Exportación de datos en formato JSON_
 
-_Usuario marca y desmarca una canción como favorita_
+![image](https://github.com/user-attachments/assets/1d61c438-35fd-40f4-b739-4b218bdc3df3)
+
+_Usuario desmarca una canción como favorita_
 
 Imagen
